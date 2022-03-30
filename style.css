@@ -442,6 +442,8 @@ header .header-2 .userBar .pricing{
     position: relative;
     cursor: pointer;
     width: 220px;
+    overflow: hidden;
+    max-height: 500px;
 }
 
 .newProduct .content .cards .images{
@@ -516,6 +518,11 @@ header .header-2 .userBar .pricing{
     padding: 10px;
 }
 
+.newProduct .content .cards .images{
+    width: 100%;
+    height: 150px;
+}
+
 .newProduct .content .cards .images img{
     width: 100%;
     height: 100%;
@@ -538,6 +545,7 @@ header .header-2 .userBar .pricing{
     color: var(--black);
     font-size: 1rem;
     margin-top: 8px;
+    
 }
 
 .newProduct .content .cards .priced{
