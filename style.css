@@ -417,6 +417,7 @@ header .header-2 .userBar .pricing{
     text-align: center;
     align-items: center;
     font-weight: 600;
+    font-size: .8rem;
 }
 
 .mobileFilter .filter li:hover{
@@ -815,12 +816,128 @@ header .header-2 .userBar .pricing{
 }
 
 
+/* Sections Collections */
+.collections{
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.collections .images{
+    width: 100%;
+    height: 100%;
+}
+
+.collections .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.collections .text{
+    position: absolute;
+}
+
+.collections .text h3{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.collections .text p{
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 6px;
+}
+
+.collections .text button{
+    background-color: var(--header2-bg);
+    padding: 7px 11px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+
+/* Specials Products */
+.specialProduct h3{
+    text-transform: capitalize;
+    position: relative;
+}
+
+
+.specialProduct h3::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    bottom: 0;
+}
+
+.specialProduct h3::after{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
+}
 
 
 
+.specialProduct .content{
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.specialProduct .content .cards{
+    display: flex;
+    gap: 20px;
+    background-color: #f5f5f5;
+}
 
+.specialProduct .content .cards  .images{
+    width: 100px;
+    height: 100px;
+}
 
+.specialProduct .content .cards .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.specialProduct .content .cards .text{
+    padding: 10px;
+}
+
+.specialProduct .content .cards .text h4{
+    text-transform: capitalize;
+}
+
+.specialProduct .content .cards .text .rating span{
+    color: var(--header2-bg);
+    margin-top: 10px;
+}
+
+.specialProduct .content .cards .text ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.specialProduct .content .cards .text ul li:nth-child(1){
+    text-decoration: line-through;
+}
 
 
 
@@ -964,7 +1081,7 @@ header .header-2 .userBar .pricing{
     }
 
     header .header-2 .searchBox li:nth-child(2) input{
-        width: 290px;
+        width: 250px;
     }
 
     header .header-2 .userBar{
