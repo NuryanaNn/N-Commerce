@@ -443,7 +443,6 @@ header .header-2 .userBar .pricing{
     cursor: pointer;
     width: 220px;
     overflow: hidden;
-    max-height: 500px;
 }
 
 .newProduct .content .cards .images{
@@ -461,7 +460,8 @@ header .header-2 .userBar .pricing{
     color: var(--white);
 }
 
-.newProduct .content .cards .options{
+.newProduct .content .cards .options,
+.arrivals .arrival-1 .content .contentSwipe .cards .text .options{
     position: absolute;
     top: 30%;
     left: 4%;
@@ -488,12 +488,13 @@ header .header-2 .userBar .pricing{
     padding: 3px;
 }
 
-.newProduct .content .cards:hover .options{
+.newProduct .content .cards:hover .options,
+.arrivals .arrival-1 .content .contentSwipe .cards:hover .text .options{
     visibility: visible;
     transition: 1s;
 }
 
-.newProduct .content .cards .options ul{
+.newProduct .content .cards .options ul,{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -520,7 +521,7 @@ header .header-2 .userBar .pricing{
 
 .newProduct .content .cards .images{
     width: 100%;
-    height: 150px;
+    height: 100%;
 }
 
 .newProduct .content .cards .images img{
@@ -545,7 +546,7 @@ header .header-2 .userBar .pricing{
     color: var(--black);
     font-size: 1rem;
     margin-top: 8px;
-    
+    width: 300px;
 }
 
 .newProduct .content .cards .priced{
@@ -735,6 +736,84 @@ header .header-2 .userBar .pricing{
     color: var(--header2-bg);
 }
 
+.arrivals .arrival-1 .content{
+    margin-top: 30px;
+}
+
+.arrivals .arrival-1 .content .contentSwipe{
+    gap: 30px;
+    display: flex;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards{
+    position: relative;
+    width: 250px;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .images{
+    width: 100%;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .images {
+    width: 150px;
+    height: 200px;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text .discount{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--header2-bg);
+    color: var(--white);
+    padding: 5px 8px;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text .options ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    list-style: none;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text .options ul li{
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text .rating{
+    text-align: center;
+    color: var(--header2-bg);
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text h4{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text .priced{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.arrivals .arrival-1 .content .contentSwipe .cards .text .priced li:nth-child(1){
+    text-decoration: line-through;
+}
+
 
 
 
@@ -907,5 +986,15 @@ header .header-2 .userBar .pricing{
     .newProduct .content .cards .mobileOptions{
         display: block;
     }
+
+    .arrivals .arrival-1{
+        width: 350px;
+    }
+
+    .arrivals .arrival-1{
+        width: 300px;
+    }
+    
+    
 
 }

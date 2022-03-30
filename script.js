@@ -16,7 +16,7 @@ var swiper = new Swiper(".category",{
 });
 
 
-var swiper = new Swiper(".banner",{
+var swiper = new Swiper(".arrival",{
     loop:true,
     centeredSlides: true,
     autoplay:{
@@ -24,8 +24,11 @@ var swiper = new Swiper(".banner",{
         disabledonInteraction :false,
     },
     breakpoints:{
+        0:{
+            slidesPerView:2,
+        },
         1024:{
-            slidesPerView:1,
+            slidesPerView:4,
         }
     }
 });
