@@ -32,3 +32,20 @@ var swiper = new Swiper(".arrival",{
         }
     }
 });
+
+var swiper = new Swiper(".sponsored",{
+    loop:true,
+    centeredSlides: true,
+    autoplay:{
+        delay :2500,
+        disabledonInteraction :false,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:2,
+        },
+        1024:{
+            slidesPerView:6,
+        }
+    }
+});
